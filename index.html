@@ -25,7 +25,7 @@
 
 var theWheel = new Winwheel({
 		'canvasId'    : 'canvas', 
-		'numSegments' : 2,  //start from 2 choices
+		'numSegments' : 0,  //start from 0 choices, which shows empty area
 		'fillStyle'   : '#e7706f',
 		'lineWidth'   : 3,
 		
@@ -36,7 +36,13 @@ function addSeg(x)
 		//theWheel.addSegment({
 		//'text' : 'freee',//date.getMinutes() + ':' + date.getSeconds(), 
 		//'fillStyle' : 'aqua'
-		//}, 1);		
+		//}, 1);
+		
+		/*check for inputs; if its 1 or 0, reject*/
+		if(x < 2)
+		{
+			document.write("wrong input");
+		}	
 		var start = theWheel.numSegments;
 		
 		while(start < x)
@@ -66,9 +72,10 @@ function addSeg(x)
 	}
 }*/
 
-function getItem()
+function getItem(x)
 {
-	
+	var arr = 
+	return 
 }
 
 </script>
