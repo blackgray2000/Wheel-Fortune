@@ -1,0 +1,15 @@
+HTML5 Canvas + JavaScript winning wheel "Winwheel.js"
+Created by Douglas McKechie @ http://www.dougtesting.net
+2012-01-28 to 2016-02-20 and onwards.
+
+See website for latest version, examples and tutorials etc.
+Follow @dougtesting on twitter to keep informed of updates and other news.
+
+LICENSE:	
+The code is open source and you are allowed to modify and use it however you wish.
+	
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Enjoy :)

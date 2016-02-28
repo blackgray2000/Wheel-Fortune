@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> let's make a wheel!</title>
+
+	<script src='Winwheel.js'></script>
+</head>
+
+
+
+<body>
+<canvas id = 'canvas' width='500' height='500'>
+	canvas is not supported in this *** browser.
+</canvas>
+
+
+<h1>input choice num</h1>
+	a: <input type="number" name="a" id="a"><br>
+
+
+<script>
+
+
+
+var theWheel = new Winwheel({
+		'canvasId'    : 'canvas', 
+		'numSegments' : 2,  //start from 2 choices
+		'fillStyle'   : '#e7706f',
+		'lineWidth'   : 3,
+		
+	});
+
+function addSeg(x)
+{
+		//theWheel.addSegment({
+		//'text' : 'freee',//date.getMinutes() + ':' + date.getSeconds(), 
+		//'fillStyle' : 'aqua'
+		//}, 1);		
+		var start = theWheel.numSegments;
+		
+		while(start < x)
+		{
+			theWheel.addSegment({
+					'text' : 'pizza',
+					'fillStyle' : 'aqua'
+					}, 1);
+			theWheel.draw();
+			start++;
+		}
+			
+		/*var newSeg = theWheel.addSegment();
+		newSegment.text = 'pizza';       
+		newSegment.fillStyle = "green";
+
+		theWheel.draw();*/
+}
+
+/*function add(x)
+{
+	var start = theWheel.numSegments;
+	while(start < x)
+	{
+		document.write('hii');
+		start++;
+	}
+}*/
+
+function getItem()
+{
+	
+}
+
+</script>
+<button onClick="addSeg(document.getElementById('a').value);">Add Segment</button>
+	<button>oh</button>
+</body>
+</html>
